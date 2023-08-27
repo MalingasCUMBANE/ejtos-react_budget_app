@@ -11,7 +11,7 @@ function Currency() {
     return (
         <div className='alert alert-secondary'>
            Currency:
-            <select style={{width: "198px"}} id="currency" onChange={handleCurrencyChange}>
+            <select  id="currency" style={selectStyles} onChange={handleCurrencyChange}>
                 <option value="USD">$ Dollar</option>
                 <option value="GBP">£ Pound</option>
                 <option value="EUR">€ Euro</option>
@@ -20,5 +20,13 @@ function Currency() {
         </div>
     );
 }
+
+const selectStyles = {
+    backgroundColor: 'lightgreen',
+    fontSize: '16px',
+   width: "198px",
+
+};
+
 
 export default Currency;
